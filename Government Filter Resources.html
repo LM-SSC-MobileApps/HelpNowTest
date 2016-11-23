@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-198-26-38.ap-northeast-1.compute.amazonaws.com/" />
+<title>Government Filter Resources</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Government Filter Resources</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${TestServer}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.ng-binding</td>
+	<td>Flood</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=img.leaflet-tile.leaflet-tile-loaded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='eventsTable']/div/div/div/a[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Show Filters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Show Filters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.well &gt; h4.ng-binding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='map']/div/div[2]/div[3]/img[@src=&quot;style/images/Clothing-Circle-Red.png&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showClothing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//a[@id='showClothing']@class</td>
+	<td>btn btn-toggle</td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//div[@id='map']/div/div[2]/div[3]/img[@src=&quot;style/images/Clothing-Circle-Red.png&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showClothing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//a[@id='showClothing']@class</td>
+	<td>*active*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

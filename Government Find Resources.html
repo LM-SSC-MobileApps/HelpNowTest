@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.helpnowmap.com/" />
+<title>test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${TestServer}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.ng-binding</td>
+	<td>Flood</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=img.leaflet-tile.leaflet-tile-loaded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='eventsTable']/div/div/div/a[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Deploy Resources</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Find Resources</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.separated-tiny.ng-binding</td>
+	<td>Match Resources</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lat</td>
+	<td>23.715</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=long</td>
+	<td>90.408</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@id='showWater']/span)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForAttribute</td>
+	<td>//a[@id='showWater']@class</td>
+	<td>*active*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Match</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=More Info</td>
+	<td>More Info</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-9 &gt; h5.ng-binding</td>
+	<td>Distribution Center E</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//h5[2]</td>
+	<td>10.63*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[4]/div/div[2]/h5</td>
+	<td>Distribution Center F</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[4]/div/div[2]/h5[2]</td>
+	<td>10.97*</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[5]/div/div[2]/h5</td>
+	<td>Distribution Center C</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[5]/div/div[2]/h5[2]</td>
+	<td>13.31*</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-198-26-38.ap-northeast-1.compute.amazonaws.com/" />
+<title>Government Deploy Resource</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Government Deploy Resource</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${TestServer}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.ng-binding</td>
+	<td>Flood</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=img.leaflet-tile.leaflet-tile-loaded</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='eventsTable']/div/div/div/a[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Deploy Resources</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deploy Resources</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.well &gt; div.row &gt; #event-title &gt; h4.separated-tiny.ng-binding</td>
+	<td>Deploy Resources</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=div.well &gt; div.row &gt; div.col-xs-12 &gt; input[name=&quot;lat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.well &gt; div.row &gt; div.col-xs-12 &gt; input[name=&quot;lat&quot;]</td>
+	<td>23.729</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.well &gt; div.row &gt; div.col-xs-12 &gt; input[name=&quot;long&quot;]</td>
+	<td>90.391</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>css=div.well &gt; div.row &gt; div.col-xs-12 &gt; input[name=&quot;long&quot;]</td>
+	<td>90*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deploy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.col-xs-6 &gt; h3.ng-binding</td>
+	<td>Deployment Details</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Description</td>
+	<td>Test Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Notes</td>
+	<td>Test Note</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=PrimaryPOCName</td>
+	<td>Test POC Name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=PrimaryPOCPhone</td>
+	<td>Test POC Phone</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=ResourceLocationStatusID</td>
+	<td>label=Active</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Add Inventory</td>
+	<td>Inventory</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Inventory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h4.ng-binding</td>
+	<td>Distribution Center B</td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>xpath=(//input[@type='text'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div/div/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-sm-12 &gt; h5.ng-binding</td>
+	<td>*1000*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='map']/div/div[2]/div[3]/img[@src=&quot;style/images/Water-DDiamond-Blue.png&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='map']/div/div[2]/div[3]/img[@src=&quot;style/images/Water-DDiamond-Blue.png&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Modify</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modify</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=canvas.heatmap-canvas</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
