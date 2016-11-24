@@ -1,8 +1,7 @@
-CREATE DATABASE  IF NOT EXISTS `helpnow` /*!40100 DEFAULT CHARACTER SET utf8 */;
+﻿CREATE DATABASE  IF NOT EXISTS `helpnow` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `helpnow`;
 -- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
--- Host: helpnowtestdb.cvjd7us24dqe.ap-northeast-1.rds.amazonaws.com    Database: helpnow
 -- ------------------------------------------------------
 -- Server version	5.6.27
 
@@ -319,7 +318,7 @@ CREATE TABLE `InviteRequest` (
 
 LOCK TABLES `InviteRequest` WRITE;
 /*!40000 ALTER TABLE `InviteRequest` DISABLE KEYS */;
-INSERT INTO `InviteRequest` VALUES (1,'272e338b-a828-11e6-9b49-06a16191fa45',1,'Paul','Smith','paulsmith@unitedway.org','2016-11-11 00:00:00');
+INSERT INTO `InviteRequest` VALUES (1,'272e338b-a828-11e6-9b49-06a16191fa45',1,'Paul','Smith','paulsmith@notrealemail.org','2016-11-11 00:00:00');
 /*!40000 ALTER TABLE `InviteRequest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
